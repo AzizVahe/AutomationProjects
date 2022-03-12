@@ -1,7 +1,9 @@
 package tests.apiTests;
 
 import base.ApiBase;
+//import io.qameta.allure.Description;
 import io.restassured.response.Response;
+import jdk.jfr.Description;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -16,8 +18,8 @@ public class TestReqresGetRequestsTesting extends ApiBase {
     private String usersListEndpoint = "/api/users";
     private String miscDataEndpoint = "/api/unknown";
 
-
-    @Test
+    @Description("BLA ************************ BLA")
+    @Test(description = "This test is fetch all users from server, BUG-6667", enabled = false)
     public void getUsersAll() {
         Response getRes = getRequest(baseUrlReqres, null, null, usersListEndpoint);
         assertThat(getRes.path("data.size()"), is(equalTo(6)));

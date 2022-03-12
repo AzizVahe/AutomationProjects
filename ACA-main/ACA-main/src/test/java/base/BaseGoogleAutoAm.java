@@ -8,10 +8,9 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class SeleniumBase {
-
+public class BaseGoogleAutoAm {
     public WebDriver driver;
-    private String baseUrl = "http://demo.guru99.com";
+    private String baseUrl = "https://www.google.com/";
 
 
     @BeforeClass
@@ -27,9 +26,8 @@ public class SeleniumBase {
         driver.get(baseUrl);
     }
 
-    @AfterClass
-    public void tearDown() {
-        driver.quit();
-    }
+//    @AfterClass
+//    public void tearDown() {
+//        driver.quit();
+//    }
 }
-

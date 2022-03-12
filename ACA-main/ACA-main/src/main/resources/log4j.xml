@@ -9,7 +9,7 @@
 
     <appender name="FILE" class="org.apache.log4j.FileAppender">
         <param name="file"
-               value="C:/Users/gevor/IdeaProjects/SampleProject/src/main/resources/samplePrj.log"/>
+               value="C:\Users\Vahe\Desktop\Automation\ACA-main\ACA-main\src\main\resources\samplePrj.log"/>
         <param name="immediateFlush" value="true"/>
         <param name="threshold" value="debug"/>
         <param name="append" value="false"/>

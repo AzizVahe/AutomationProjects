@@ -1,7 +1,6 @@
 package tests.apiTests;
 
 
-import base.ApiBase;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -9,9 +8,9 @@ import static org.hamcrest.Matchers.*;
 
 import static io.restassured.RestAssured.given;
 
-public class LILTests extends ApiBase {
+public class LILTests {
 
-    public String baseUrl = baseUrlLocal;
+    public String baseUrl = "http://localhost:80";
 
     @Test
     public void getCategoryTest(){

@@ -8,11 +8,9 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class SeleniumBase {
-
+public class SwagLabsBase {
     public WebDriver driver;
-    private String baseUrl = "http://demo.guru99.com";
-
+    private String baseUrl = "https://www.saucedemo.com/";
 
     @BeforeClass
     public void setUp() {
@@ -27,9 +25,9 @@ public class SeleniumBase {
         driver.get(baseUrl);
     }
 
-    @AfterClass
-    public void tearDown() {
-        driver.quit();
-    }
-}
+//    @AfterClass
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
+}

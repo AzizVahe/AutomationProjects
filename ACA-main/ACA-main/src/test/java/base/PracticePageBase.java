@@ -1,5 +1,4 @@
 package base;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,11 +7,9 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class SeleniumBase {
-
+public class PracticePageBase {
     public WebDriver driver;
-    private String baseUrl = "http://demo.guru99.com";
-
+    private String baseUrl = "https://rahulshettyacademy.com/AutomationPractice/";
 
     @BeforeClass
     public void setUp() {
@@ -27,9 +24,8 @@ public class SeleniumBase {
         driver.get(baseUrl);
     }
 
-    @AfterClass
+        @AfterClass
     public void tearDown() {
         driver.quit();
     }
 }
-

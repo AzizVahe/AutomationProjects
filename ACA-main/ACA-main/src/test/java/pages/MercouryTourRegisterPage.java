@@ -45,6 +45,8 @@ public class MercouryTourRegisterPage {
     WebElement registeredUser;
 
 
+
+
     public MercouryTourRegisterPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
